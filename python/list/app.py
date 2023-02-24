@@ -15,4 +15,50 @@ for num in numbers:
 # print the smallest value
 print("The smallest number is:", smallest)
 
+#pythonfuntions:
+
+#calling a function
+def my_function():
+    print("hello this is kinza: ")
+my_function()
+    
+
+#arguments in functions: #arguments are also called args 
+#parameters and arguments are used for the same thing.
+def my_function(fname):
+  print(fname + " Refsnes")
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")
+
+#number of arguments:
+def my_function(fname, lname):
+  print(fname + " " + lname)
+
+my_function("Emil", "Refsnes")
+
+#arbiterary arguments:
+def my_function(fname, lname):
+  print(fname + " " + lname)
+
+my_function("Emil", "Refsnes")
+
+
+#keywords arguments:
+def my_function(fname, lname):
+  print(fname + " " + lname)
+
+my_function("Emil", "Refsnes")
+
+#arbitrary keyword arguments:
+def my_function(fname, lname):
+  print(fname + " " + lname)
+
+my_function("Emil", "Refsnes")
+
+#default parameter value:
+def my_function(fname, lname):
+  print(fname + " " + lname)
+
+my_function("Emil", "Refsnes")
 
