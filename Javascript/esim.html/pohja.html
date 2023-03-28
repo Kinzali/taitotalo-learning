@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- lomakkeen perusrakenne -->
+    <input type="text" id="arvoYksi" placeholder="text" />
+    <button onclick="tapahtuma()">Nyt juodaan teetä</button>
+    <p id="tulostusalue">Tähän tulee tulos</p>
+
+    <script>
+      //Napin jotain tapahtuu tapahtuma
+      function tapahtuma() {
+        //muuttujaan lukuYksi luetaan input kentän sisältö
+        let lukuYksi = document.querySelector('#arvoYksi').value;
+        //kerrotaan lukuYksi seiskalla
+        lukuYksi = parseInt(lukuYksi) + 7;
+        //kirjoitetaan lukuYksi verkkosivuun p kohtaan
+        document.querySelector('#tulostusalue').innerHTML = lukuYksi;
+      }
+
+      function tapahtu() {
+        //muutuujaan lukuYksi luetaan input kentän sisältö
+        let age = document.querySelector('arvoYksi').value;
+        // toteutetaan ikään liittyvät vertailut
+        let tulos = ' ';
+        if (age >= ADULT && age < 150) {
+          tulos = 'täysi-ikäinen';
+        } else if (age >= 0 && age < ADULT) {
+          tulos = 'alaikäinen';
+        } else {
+          tulos = 'jotain meni väärin.';
+        }
+      }
+
+      function tapahtu() {
+        for (let i = 1; i <= maara; i++) {
+          document.querySelector('#tulostusalue').innerHTML =
+            'tämä on ' + i + '. kupillinen teetä tänään.';
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- lomakkeen perusrakenne -->
+<input type="text" id="arvoYksi" />
+<button onclick="tapahtuma()">Nyt juodaan teetä</button>
+<p id="tulostusalue">Tähän tulee tulos</p>
+
+<script>
+    //Napin jotain tapahtuu tapahtuma
+    function tapahtuma(){
+       //muuttujaan lukuYksi luetaan input kentän sisältö
+        let maara = document.querySelector("#arvoYksi").value
+        //kirjoitetaan annetun monta kerta sama asia
+        for(let i = 1; i <= maara; i++){
+            document.querySelector("#tulostusalue").innerHTML += <br>"Tämä on "+i+". kupillinen teetä tänään".
+         }
+
+        document.queryselector("#tulostusalue").innerHTML = lukuYksi
+    }
+
+let str = prompt("Enter a string:");
+let count = 0
+
+for (let i = 0; i < str.length; i++){
+ if(str[i] == 'a'){
+    count++
+}
+    }
+
+
+
+<script>
